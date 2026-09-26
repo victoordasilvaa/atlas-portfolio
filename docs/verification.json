@@ -1,0 +1,101 @@
+{
+  "date": "2026-09-25",
+  "java": "OpenJDK 17.0.20",
+  "maven": "3.9.9",
+  "tests": {
+    "tests": 40,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "suites": [
+    {
+      "suite": "dev.portfolio.HttpApiIntegrationTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "dev.portfolio.HttpMemberDirectoryTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "dev.portfolio.PersistenceIntegrationTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "dev.portfolio.ProjectRulesTest",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "dev.portfolio.ProjectServiceTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "dev.portfolio.mock.MemberServletTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "coverageScope": [
+    "dev.portfolio.domain",
+    "dev.portfolio.service"
+  ],
+  "coverage": {
+    "INSTRUCTION": {
+      "covered": 867,
+      "missed": 8,
+      "percentage": 99.09
+    },
+    "BRANCH": {
+      "covered": 135,
+      "missed": 11,
+      "percentage": 92.47
+    },
+    "LINE": {
+      "covered": 185,
+      "missed": 2,
+      "percentage": 98.93
+    },
+    "COMPLEXITY": {
+      "covered": 94,
+      "missed": 10,
+      "percentage": 90.38
+    },
+    "METHOD": {
+      "covered": 31,
+      "missed": 0,
+      "percentage": 100.0
+    },
+    "CLASS": {
+      "covered": 5,
+      "missed": 0,
+      "percentage": 100.0
+    }
+  },
+  "browser": {
+    "packagedWar": true,
+    "createThroughUi": true,
+    "updateThroughUi": true,
+    "projects": 5,
+    "javascriptErrors": [],
+    "mobilePageOverflow": false
+  },
+  "postgresqlExecuted": false,
+  "dockerComposeExecuted": false
+}
