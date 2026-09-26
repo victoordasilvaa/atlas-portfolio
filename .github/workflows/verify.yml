@@ -3,6 +3,25 @@ on: [push, pull_request]
 permissions:
   contents: read
 jobs:
+  compose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      DB_PASSWORD: disposable_database_ci
+      APP_USER: editor
+      APP_PASSWORD: disposable_editor_ci
+      VIEWER_USER: viewer
+      VIEWER_PASSWORD: disposable_viewer_ci
+      MEMBERS_USER: directory
+      MEMBERS_PASSWORD: disposable_directory_ci
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker compose up --build -d
+      - run: python3 docker/smoke.py
+      - run: docker compose logs --no-color
+        if: failure()
+      - run: docker compose down -v
+        if: always()
   test:
     runs-on: ubuntu-latest
     services:
