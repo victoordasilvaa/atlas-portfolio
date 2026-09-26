@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+  <persistence-unit name="portfolio" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>dev.portfolio.entity.Project</class>
+    <class>dev.portfolio.entity.Member</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.validation.mode" value="NONE"/>
+      <property name="hibernate.default_batch_fetch_size" value="32"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+      <property name="hibernate.hbm2ddl.auto" value="validate"/>
+      <property name="hibernate.show_sql" value="false"/>
+      <property name="hibernate.connection.pool_size" value="10"/>
+      <property name="hibernate.connection.isolation" value="2"/>
+      <property name="hibernate.jdbc.batch_size" value="20"/>
+      <property name="hibernate.validator.autoregister_listeners" value="false"/>
+    </properties>
+  </persistence-unit>
+</persistence>

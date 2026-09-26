@@ -1,0 +1,106 @@
+--- upstream/org/jcompany/commons/event/PlcEventHelper.java
++++ adapted/org/jcompany/commons/event/PlcEventHelper.java
+@@ -5,7 +5,7 @@
+ 
+ import org.apache.commons.lang.StringUtils;
+ import org.apache.log4j.Logger;
+-import org.apache.webbeans.container.ManagerImpl;
++import javax.enterprise.inject.spi.CDI;
+ import org.jcompany.commons.PlcBaseContextVO;
+ 
+ public class PlcEventHelper extends PlcBaseEvent {
+@@ -25,8 +25,8 @@
+ 			Class eventoDinamico = Class.forName(nomeEvento);
+ 			Constructor constructor = eventoDinamico.getConstructor(PlcBaseContextVO.class, Object.class);
+ 			Object evento = constructor.newInstance(context, entityPlc);
+-			if (ManagerImpl.getManager().resolveObservers(evento , new Annotation[0]).size()>0) {				
+-				ManagerImpl.getManager().fireEvent( evento, new Annotation[0]);
++			if (CDI.current().getBeanManager().resolveObserverMethods(evento , new Annotation[0]).size()>0) {				
++				CDI.current().getBeanManager().fireEvent( evento, new Annotation[0]);
+ 				ret = (PlcBaseEvent)evento;
+ 			}
+ 		} catch (Exception e) {
+@@ -39,8 +39,8 @@
+ 			Class eventoDinamico = Class.forName(nomeEvento);
+ 			Constructor constructor = eventoDinamico.getConstructor(PlcBaseContextVO.class, Object.class);
+ 			Object evento = constructor.newInstance(context, entityPlc);	
+-			if (ManagerImpl.getManager().resolveObservers(evento , new Annotation[0]).size()>0) {				
+-				ManagerImpl.getManager().fireEvent( evento , new Annotation[0]);
++			if (CDI.current().getBeanManager().resolveObserverMethods(evento , new Annotation[0]).size()>0) {				
++				CDI.current().getBeanManager().fireEvent( evento , new Annotation[0]);
+ 				ret = (PlcBaseEvent)evento;
+ 			}
+ 			
+@@ -67,8 +67,8 @@
+ 			Class eventoDinamico = Class.forName(nomeEvento);
+ 			Constructor constructor = eventoDinamico.getConstructor(String.class, Class.class);
+ 			Object e = constructor.newInstance(pathInfo, clazz);
+-			if (ManagerImpl.getManager().resolveObservers(e , new Annotation[0]).size()>0) {				
+-				ManagerImpl.getManager().fireEvent( e, new Annotation[0]);
++			if (CDI.current().getBeanManager().resolveObserverMethods(e , new Annotation[0]).size()>0) {				
++				CDI.current().getBeanManager().fireEvent( e, new Annotation[0]);
+ 				ret = (PlcBaseEvent)e;
+ 			}
+ 		} catch (Exception e) {
+@@ -92,8 +92,8 @@
+ 			Class eventoDinamico = Class.forName(nomeEvento);
+ 			Constructor constructor = eventoDinamico.getConstructor(String.class, Class.class);
+ 			Object e = constructor.newInstance(pathInfo, clazz);
+-			if (ManagerImpl.getManager().resolveObservers(e , new Annotation[0]).size()>0) {				
+-				ManagerImpl.getManager().fireEvent( e , new Annotation[0]);
++			if (CDI.current().getBeanManager().resolveObserverMethods(e , new Annotation[0]).size()>0) {				
++				CDI.current().getBeanManager().fireEvent( e , new Annotation[0]);
+ 				ret = (PlcBaseEvent)e;
+ 			}
+ 			
+@@ -118,8 +118,8 @@
+ 			Class eventoDinamico = Class.forName(nomeEvento);
+ 			Constructor constructor = eventoDinamico.getConstructor(Object.class);
+ 			Object evento = constructor.newInstance(object);
+-			if (ManagerImpl.getManager().resolveObservers(evento , new Annotation[0]).size()>0) {				
+-				ManagerImpl.getManager().fireEvent( evento, new Annotation[0]);
++			if (CDI.current().getBeanManager().resolveObserverMethods(evento , new Annotation[0]).size()>0) {				
++				CDI.current().getBeanManager().fireEvent( evento, new Annotation[0]);
+ 				ret = (PlcBaseEvent)evento;
+ 			}
+ 		} catch (Exception e) {
+@@ -142,8 +142,8 @@
+ 			Class eventoDinamico = Class.forName(nomeEvento);
+ 			Constructor constructor = eventoDinamico.getConstructor(PlcBaseContextVO.class, Object.class, Object.class);
+ 			Object evento = constructor.newInstance(context, entityPlc, object);
+-			if (ManagerImpl.getManager().resolveObservers(evento , new Annotation[0]).size()>0) {				
+-				ManagerImpl.getManager().fireEvent( evento, new Annotation[0]);
++			if (CDI.current().getBeanManager().resolveObserverMethods(evento , new Annotation[0]).size()>0) {				
++				CDI.current().getBeanManager().fireEvent( evento, new Annotation[0]);
+ 				ret = (PlcBaseEvent)evento;
+ 			}
+ 		} catch (Exception e) {
+--- upstream/org/jcompany/persistence/jdbc/PlcWrapperDataSource.java
++++ adapted/org/jcompany/persistence/jdbc/PlcWrapperDataSource.java
+@@ -194,14 +194,16 @@
+ 		}
+ 	}
+ 
+-	public boolean isWrapperFor(Class<?> arg0) throws SQLException {
+-		// TODO Auto-generated method stub
+-		return false;
+-	}
+-
+-	public <T> T unwrap(Class<T> arg0) throws SQLException {
+-		// TODO Auto-generated method stub
+-		return null;
+-	}
+-
++    public java.util.logging.Logger getParentLogger() throws java.sql.SQLFeatureNotSupportedException {
++        if (datasource instanceof DataSource) return ((DataSource) datasource).getParentLogger();
++        throw new java.sql.SQLFeatureNotSupportedException();
++    }
++    public <T> T unwrap(Class<T> type) throws SQLException {
++        if (type.isInstance(this)) return type.cast(this);
++        if (datasource instanceof DataSource) return ((DataSource) datasource).unwrap(type);
++        throw new SQLException("Unsupported unwrap: " + type);
++    }
++    public boolean isWrapperFor(Class<?> type) throws SQLException {
++        return type.isInstance(this) || (datasource instanceof DataSource && ((DataSource) datasource).isWrapperFor(type));
++    }
+ }

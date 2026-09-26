@@ -1,0 +1,787 @@
+openapi: 3.0.3
+info:
+  title: Atlas Portfolio API
+  version: 1.0.0
+  description: 'Java MVC2 + jCompany Community 1.2 adaptado. Basic Auth do Tomcat.
+    GET: viewer/editor. Escritas: editor. Erros do contêiner anteriores ao JAX-RS
+    podem ser HTML.'
+servers:
+- url: http://localhost:8080/portfolio/api
+security:
+- basicAuth: []
+paths:
+  /projects:
+    get:
+      summary: Listar projetos com paginação e filtros
+      parameters:
+      - name: name
+        in: query
+        schema:
+          type: string
+          maxLength: 160
+      - name: status
+        in: query
+        schema:
+          type: string
+          enum:
+          - EM_ANALISE
+          - ANALISE_REALIZADA
+          - ANALISE_APROVADA
+          - INICIADO
+          - PLANEJADO
+          - EM_ANDAMENTO
+          - ENCERRADO
+          - CANCELADO
+      - name: page
+        in: query
+        schema:
+          type: integer
+          minimum: 0
+          maximum: 1000000
+          default: 0
+      - name: size
+        in: query
+        schema:
+          type: integer
+          minimum: 1
+          maximum: 100
+          default: 20
+      responses:
+        '200':
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProjectPage'
+        '400':
+          description: JSON ou parâmetros inválidos
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '401':
+          description: Autenticação obrigatória
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '403':
+          description: Perfil sem permissão
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '404':
+          description: Projeto inexistente
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '409':
+          description: Conflito de regra ou versão
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '422':
+          description: Dados inválidos
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '428':
+          description: Versão obrigatória
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '503':
+          description: Diretório externo indisponível
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+    post:
+      summary: Criar projeto em análise (editor)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProjectInput'
+      responses:
+        '201':
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Project'
+        '400':
+          description: JSON ou parâmetros inválidos
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '401':
+          description: Autenticação obrigatória
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '403':
+          description: Perfil sem permissão
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '404':
+          description: Projeto inexistente
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '409':
+          description: Conflito de regra ou versão
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '422':
+          description: Dados inválidos
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '428':
+          description: Versão obrigatória
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '503':
+          description: Diretório externo indisponível
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+  /projects/{id}:
+    parameters:
+    - name: id
+      in: path
+      required: true
+      schema:
+        type: integer
+        format: int64
+        minimum: 1
+    get:
+      summary: Obter projeto e ETag de versão
+      responses:
+        '200':
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Project'
+        '400':
+          description: JSON ou parâmetros inválidos
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '401':
+          description: Autenticação obrigatória
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '403':
+          description: Perfil sem permissão
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '404':
+          description: Projeto inexistente
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '409':
+          description: Conflito de regra ou versão
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '422':
+          description: Dados inválidos
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '428':
+          description: Versão obrigatória
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '503':
+          description: Diretório externo indisponível
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+    put:
+      summary: Substituir campos editáveis; status possui operação separada
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProjectUpdate'
+      responses:
+        '200':
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Project'
+        '400':
+          description: JSON ou parâmetros inválidos
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '401':
+          description: Autenticação obrigatória
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '403':
+          description: Perfil sem permissão
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '404':
+          description: Projeto inexistente
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '409':
+          description: Conflito de regra ou versão
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '422':
+          description: Dados inválidos
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '428':
+          description: Versão obrigatória
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '503':
+          description: Diretório externo indisponível
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+    delete:
+      summary: Excluir respeitando status e versão (editor)
+      parameters:
+      - name: If-Match
+        in: header
+        required: true
+        schema:
+          type: string
+          example: '"2"'
+      responses:
+        '204':
+          description: Excluído
+        '400':
+          description: JSON ou parâmetros inválidos
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '401':
+          description: Autenticação obrigatória
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '403':
+          description: Perfil sem permissão
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '404':
+          description: Projeto inexistente
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '409':
+          description: Conflito de regra ou versão
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '422':
+          description: Dados inválidos
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '428':
+          description: Versão obrigatória
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '503':
+          description: Diretório externo indisponível
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+  /projects/{id}/status:
+    parameters:
+    - name: id
+      in: path
+      required: true
+      schema:
+        type: integer
+        format: int64
+        minimum: 1
+    patch:
+      summary: Avançar uma etapa ou cancelar (editor)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StatusInput'
+      responses:
+        '200':
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Project'
+        '400':
+          description: JSON ou parâmetros inválidos
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '401':
+          description: Autenticação obrigatória
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '403':
+          description: Perfil sem permissão
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '404':
+          description: Projeto inexistente
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '409':
+          description: Conflito de regra ou versão
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '422':
+          description: Dados inválidos
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '428':
+          description: Versão obrigatória
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '503':
+          description: Diretório externo indisponível
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+  /portfolio/report:
+    get:
+      summary: Relatório consolidado do portfólio
+      responses:
+        '200':
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Report'
+        '400':
+          description: JSON ou parâmetros inválidos
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '401':
+          description: Autenticação obrigatória
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '403':
+          description: Perfil sem permissão
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '404':
+          description: Projeto inexistente
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '409':
+          description: Conflito de regra ou versão
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '422':
+          description: Dados inválidos
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '428':
+          description: Versão obrigatória
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '503':
+          description: Diretório externo indisponível
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+  /members:
+    get:
+      summary: Consultar diretório externo; não cadastra membros localmente
+      responses:
+        '200':
+          description: Membros externos
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Member'
+        '400':
+          description: JSON ou parâmetros inválidos
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '401':
+          description: Autenticação obrigatória
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '403':
+          description: Perfil sem permissão
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '404':
+          description: Projeto inexistente
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '409':
+          description: Conflito de regra ou versão
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '422':
+          description: Dados inválidos
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '428':
+          description: Versão obrigatória
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '503':
+          description: Diretório externo indisponível
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+  schemas:
+    ProjectInput:
+      type: object
+      additionalProperties: false
+      required:
+      - name
+      - description
+      - startDate
+      - expectedEndDate
+      - budget
+      - managerId
+      - memberIds
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 160
+        description:
+          type: string
+          minLength: 1
+          maxLength: 4000
+        startDate:
+          type: string
+          format: date
+        expectedEndDate:
+          type: string
+          format: date
+        budget:
+          type: number
+          minimum: 0
+          maximum: 9999999999999999.99
+          multipleOf: 0.01
+        managerId:
+          type: integer
+          format: int64
+          minimum: 1
+        memberIds:
+          type: array
+          minItems: 1
+          maxItems: 10
+          uniqueItems: true
+          items:
+            type: integer
+            format: int64
+            minimum: 1
+    ProjectUpdate:
+      type: object
+      additionalProperties: false
+      required:
+      - name
+      - description
+      - startDate
+      - expectedEndDate
+      - budget
+      - managerId
+      - memberIds
+      - version
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 160
+        description:
+          type: string
+          minLength: 1
+          maxLength: 4000
+        startDate:
+          type: string
+          format: date
+        expectedEndDate:
+          type: string
+          format: date
+        budget:
+          type: number
+          minimum: 0
+          maximum: 9999999999999999.99
+          multipleOf: 0.01
+        managerId:
+          type: integer
+          format: int64
+          minimum: 1
+        memberIds:
+          type: array
+          minItems: 1
+          maxItems: 10
+          uniqueItems: true
+          items:
+            type: integer
+            format: int64
+            minimum: 1
+        version:
+          type: integer
+          minimum: 0
+    StatusInput:
+      type: object
+      additionalProperties: false
+      required:
+      - status
+      - version
+      properties:
+        status:
+          type: string
+          enum:
+          - EM_ANALISE
+          - ANALISE_REALIZADA
+          - ANALISE_APROVADA
+          - INICIADO
+          - PLANEJADO
+          - EM_ANDAMENTO
+          - ENCERRADO
+          - CANCELADO
+        version:
+          type: integer
+          minimum: 0
+        actualEndDate:
+          type: string
+          format: date
+          description: Obrigatória ao encerrar; proibida nas demais transições.
+    Member:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+        role:
+          type: string
+    Project:
+      type: object
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 160
+        description:
+          type: string
+          minLength: 1
+          maxLength: 4000
+        startDate:
+          type: string
+          format: date
+        expectedEndDate:
+          type: string
+          format: date
+        budget:
+          type: string
+          pattern: ^\d+\.\d{2}$
+          example: '100000.01'
+          description: Decimal exato; string na resposta para preservar centavos em
+            clientes JavaScript.
+        id:
+          type: integer
+          format: int64
+        version:
+          type: integer
+        actualEndDate:
+          type: string
+          format: date
+          nullable: true
+        status:
+          type: string
+          enum:
+          - EM_ANALISE
+          - ANALISE_REALIZADA
+          - ANALISE_APROVADA
+          - INICIADO
+          - PLANEJADO
+          - EM_ANDAMENTO
+          - ENCERRADO
+          - CANCELADO
+        risk:
+          type: string
+          enum:
+          - BAIXO
+          - MEDIO
+          - ALTO
+        manager:
+          $ref: '#/components/schemas/Member'
+        members:
+          type: array
+          items:
+            $ref: '#/components/schemas/Member'
+    ProjectPage:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/Project'
+        total:
+          type: integer
+          format: int64
+        page:
+          type: integer
+        size:
+          type: integer
+    Report:
+      type: object
+      properties:
+        projectsByStatus:
+          type: object
+          additionalProperties:
+            type: integer
+        budgetByStatus:
+          type: object
+          additionalProperties:
+            type: string
+            pattern: ^\d+\.\d{2}$
+            example: '100000.01'
+            description: Decimal exato; string na resposta para preservar centavos
+              em clientes JavaScript.
+        averageCompletedDurationDays:
+          type: number
+          nullable: true
+          description: Dias corridos; null sem encerrados; duas casas decimais.
+        uniqueAllocatedMembers:
+          type: integer
+          format: int64
+        totalBudget:
+          type: string
+          pattern: ^\d+\.\d{2}$
+          example: '100000.01'
+          description: Decimal exato; string na resposta para preservar centavos em
+            clientes JavaScript.
+    Problem:
+      type: object
+      properties:
+        status:
+          type: integer
+        code:
+          type: string
+        message:
+          type: string
+        traceId:
+          type: string
+          format: uuid
