@@ -1,0 +1,43 @@
+/*  																						
+	    jCompany Full-Stack Framework - Community Version									
+	    Copyright (C) 2008  Powerlogic														
+																							
+	    This program is free software: you can redistribute it and/or modify				
+	    it under the terms of the GNU General Public License as published by				
+	    the Free Software Foundation, version 3 of the License.								
+	    																					
+	    This program is distributed in the hope that it will be useful,						
+	    but WITHOUT ANY WARRANTY; without even the implied warranty of						
+	    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the						
+	    GNU General Public License for more details.										
+	    																					
+	    You should have received a copy of the GNU General Public License					
+	    along with this program.  If not, see <http://www.gnu.org/licenses/>.				
+																							
+	    Contact: plc@powerlogic.com.br - www.powerlogic.com.br 								
+																							
+ */ 
+//$Id: Length.java 9795 2006-04-26 06:41:18Z epbernard $
+package org.jcompany.domain.validate;
+
+import java.lang.annotation.Documented;
+import static java.lang.annotation.ElementType.FIELD;
+import static java.lang.annotation.ElementType.METHOD;
+import java.lang.annotation.Retention;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
+import java.lang.annotation.Target;
+
+import org.hibernate.validator.ValidatorClass;
+
+/**
+ * @since jCompany5 Validação invariável para uma propriedade que deva possuir exatamente um único size. 
+ * Aprimora o uso de duas validações de size mínimo e máximo, melhorando a mensagem de erro.
+ */
+@Documented
+@ValidatorClass(PlcValidateExatLengthValidator.class)
+@Target({METHOD, FIELD})
+@Retention(RUNTIME)
+public @interface PlcValidateExactLength {
+	int length();
+	String message() default "{validator.size.exact}";
+}

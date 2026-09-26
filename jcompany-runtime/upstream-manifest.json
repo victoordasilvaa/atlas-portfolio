@@ -1,0 +1,918 @@
+[
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/IPlcFileEntity.java",
+    "sha256": "51638a3eec9cea319a951065480a2efb069c5f7928d336db6a8ed8833039ded6"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/PlcHqlInteractveEntity.java",
+    "sha256": "17b0daedb82e02f20ef073b34652c13e0012ee42b529f8ece48afba89f97280c"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/PlcBussinesObjectTreeEntity.java",
+    "sha256": "46714f30207ba7c63199d56e1d13aa98ba971fe854803f3184edef6dc7c54a49"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/PlcBaseEntity.java",
+    "sha256": "8fa80a04d5795ce96742d5932698629230012d13d1265d7a4f3accdf42d409c2"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/PlcArgEntity.java",
+    "sha256": "8bd89a9fa39f1740363e98c388bf02c05c905d91e8f6a30dbeefb3a7aaf60c81"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/PlcAdmEmailFullEntity.java",
+    "sha256": "f0dda83579f26201bdd6a9bfadd888cd4ad901f649de44ad7b3fefe9fb158b2a"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/PlcException.java",
+    "sha256": "2142c8d948c89752bc5a0b0b93e09e10d8e731050a4e1513a2e1851fdbf83d86"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/PlcAdmEntity.java",
+    "sha256": "86f88231ef4a0c6bf62ba278500509ffaa3e62873c0cc972522164c9926b8071"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/PlcConstantsCommons.java",
+    "sha256": "55f39baaa5e9e3b258e2807f3bbe9e2dc875be93c35e7d8ab90204cf4f552ac0"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/PlcVersion.java",
+    "sha256": "d9fafa865edc035fa2a6ce89991147bf2df5625ed82a951add604e37ef498c09"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/PlcFileEntity.java",
+    "sha256": "daae096bc4b079771ce8dbbcad53362784cfb0d19ab661705806ed272af861b7"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/PlcBaseUserProfileEntity.java",
+    "sha256": "6c68218935686ee93051ecc3c0d8dcf30dec79ae020c20b10b4f911cbc0445e7"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/PlcBaseContextVO.java",
+    "sha256": "3555d9ca873a53eed566b9346e81bcc416344d97e2f8d952f890af2e34d6cee7"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/PlcAdmEmailWithAttachedFileEntity.java",
+    "sha256": "da8dc104204f6f964107cca11d037e8181230a76e916f374bb3f3d00d217d9f6"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/PlcAppException.java",
+    "sha256": "816602b5ab8e6fb4989b30b0180c73deed133fba6787e58bfcfb7e6273b61bae"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/PlcAopException.java",
+    "sha256": "13feace389e9abc893c976003084725da32b144b65614ee983d366c213fceb48"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/PlcAdmEmailEntity.java",
+    "sha256": "e59f52185ce0de76a643cf2182ecc9f03e2cc993d35e5e2e8c6ec34dd5485869"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/PlcBaseEntity.java",
+    "sha256": "abf2aaab3b3b4a7423f69170c4259444a5333d3cf094df3772935c9fe646cd48"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/PlcBaseMapEntity.java",
+    "sha256": "649c43a5edb598d87d04622fdfa29a9e1b92f3bf6f3ec7dc8cb7fd320b0d0080"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/annotation/PlcCopyable.java",
+    "sha256": "2ad934a178c4dc166a1cb283040611d24ddbc241e983bac8b1012897ac80899c"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/annotation/PlcDetail.java",
+    "sha256": "9223831be25e240d29eb3471ff82d42eeb6e69890fc705ee09d6d381f231aa20"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/annotation/PlcAudit.java",
+    "sha256": "fc37df908452713468c5e006cdd7b3db70bf08433fb75caedddbd6935c364f11"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/annotation/PlcClassPropDynamic.java",
+    "sha256": "734b1ab93106ee60df89973619c6bf110ccd5bcdc21acbfa87519ac4190b1de7"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/annotation/PlcImplementation.java",
+    "sha256": "a691c256b6bf6a48a8c794a625cc3bd49ca90a11e8de7f9b76402f2cf4cd6840"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/annotation/PlcExplorer.java",
+    "sha256": "ab4b758f5dca526c4942b4f984931019fc7fc5235e82896f9f70a62c4bff648b"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/annotation/PlcMaster.java",
+    "sha256": "d86f8c98c47ece8e3de388562703b8323bfaffc7c1267466357d3b34743b5710"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/annotation/PlcPrimaryKey.java",
+    "sha256": "b65d939806fc1217204c3d9db005b6cf468b59aa8b1299a2bada07f4ec986814"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/annotation/PlcBusinessKey.java",
+    "sha256": "b841d9bb53e03b68beaf89e494afcf6d8b9869ba604957e81cda87a9c7619ff7"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/annotation/PlcLogicExclusion.java",
+    "sha256": "9861a096c66b93e574f6bf2fb34b95489daff2a3113d9f2f06c078f0cfbd5481"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/annotation/PlcFactory.java",
+    "sha256": "00961668c984130051d1f08faf6abb277403fcc19fa82f297ecc777e72aa7031"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/annotation/PlcSlaMaximumTime.java",
+    "sha256": "54ae4a0326dd32fedaa5ea8746c7da9fa93322fc6b0b1b37da6d0da0e047684f"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/annotation/PlcEntityMetadata.java",
+    "sha256": "865b371df35531e4ff2c25887491d24deb3a19312a050ab3743497553a400c65"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/annotation/PlcNavigation.java",
+    "sha256": "3ee46e8bc3a03c74cf24bbda699eaef510480114c434cd4fe35f410d06794c33"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/annotation/PlcOnDemand.java",
+    "sha256": "da4bdb992e10729fb9f5585982b4f5a0ca7d61452aa409f2c107d71b5bd147f9"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/annotation/PlcIoC.java",
+    "sha256": "12db29b9defc5be3da330c60d856fab94a96fa7e53bb9644cb26bd45172586c2"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/annotation/PlcTabular.java",
+    "sha256": "88bf55616658fa9cc2de2ec2898784c05a2852b508639a0cd91031f33f228bb0"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/audit/PlcBaseAuditComp.java",
+    "sha256": "ff13b61d9b5c8f03c5429a57d2b05b183cc89954da988fc9f8078b74a0d32eb2"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/audit/PlcBaseMapClassPropAudit.java",
+    "sha256": "adbf1ee99fb231333b49ac5aab4d4fdc086e07f11e983296f6c978927d0cccd0"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/audit/PlcBaseMapPropAudit.java",
+    "sha256": "2e57445ca2ac8327053608ac151cb157dffb3039186cdffcb4d9c159ea4cf079"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/audit/PlcBaseMapObjectAudit.java",
+    "sha256": "c360d1c75473e3adbaa2ac06023850f8fe215f2c01cf0a5de263f6104f6bfd43"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/facade/IPlcBaseFacade.java",
+    "sha256": "3b375f4cfdc339252dc6001884440664b56ff39f28bb70f65db63ec0b395cf5d"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/facade/IPlcAdmFacade.java",
+    "sha256": "0800d1e79171defcdd45f91266d1d5da7ba6cfa022d67391c91bcabb6219dd6e"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/facade/IPlcFacadeRemote.java",
+    "sha256": "17ff0cd36724d5112113ce7d9ccae5c1d31a5b95663d4703ad31303b0a686549"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/facade/IPlcFacade.java",
+    "sha256": "7daa6492d496a5bc8d53be516b64429dd203332ef1ccbb830267fd4d35680646"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/ioc/PlcBaseFactoryIoCService.java",
+    "sha256": "a9263a2c1e711e58014fa94f2798a0abffc94c7a041e136c9e1481d78f72d17f"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/ioc/PlcBaseLocator.java",
+    "sha256": "8f31b685bd95523dd02d4b83b713f604a80c5f19dd199a64071f4a072e50bf40"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/file/PlcBaseMapFile.java",
+    "sha256": "7d6df60416c0e2869dc67a5a4a80faf0a08abcbfd19af27d9ee14f4ceb31795d"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/logger/PlcLogger.java",
+    "sha256": "4b28b8738cea56bd1dce988cba4645b7a3c993fcd1635b696ee062a51fc56458"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/logger/PlcLoggerFactory.java",
+    "sha256": "8a8c784a326d782101d52851756944df10e586c903448929b12892039023231f"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/logger/PlcPropertyConfigurator.java",
+    "sha256": "99b178c72f5e239da8ff6277a367afb201492508c7d222cb4d09a7ae74c2dddf"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/logger/PlcRootLogger.java",
+    "sha256": "b78421f720090233f821e3c379dd401bb253bd088518a155086137956eadf555"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/semaphore/PlcReaderPersister.java",
+    "sha256": "9402d3e4c079c3a481323e9aaeacd636360f286fe46240e63d76c42c7c15a44c"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/comparator/PlcCompareName.java",
+    "sha256": "6ac3737e666bb8a3881b286b65dffb87d82ab4b94e87ecee7b78bde2ad94b1ba"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/comparator/PlcCompareString.java",
+    "sha256": "8287d095073eb2e4ed4e1c0a399e22f770a72e659c591d87f853705573284730"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/comparator/PlcCompareOrderTreeview.java",
+    "sha256": "7b78cd525fb8484942e6e890a122d6287374636abce3a0b494702b77db3807c8"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/comparator/PlcCompareNameCaseInsensitive.java",
+    "sha256": "e222d8147b54fc5e86a9104646a415cffc52b33e8e628a6a5db6d6b1190a0de7"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/comparator/PlcCompareId.java",
+    "sha256": "d21ea2a13c4b2006232d60247766111f34e863de4c8b6fcf38b4728682f75b54"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/event/PlcEventHelper.java",
+    "sha256": "1098c4ad35baba315e5b2cd3186fc85cff53f2bbe9ed660938d1519a58fffb7c"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/event/PlcBaseEvent.java",
+    "sha256": "d1743ed015e0c59e87f73d8f90f1190d54e653771f1788220b23265bb9ae08f4"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/event/PlcCommonsEvent.java",
+    "sha256": "47a98922ac786d69d4e29a57cef8d80f3450e98db7a0401c109fc7ef3bfd8c72"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/converters/PlcBigDecimalUtilConverter.java",
+    "sha256": "628ee2bcb0c7aa46bf67ace60f0b0edbbccfd7126dc384dc831e17e10de3d605"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/converters/PlcIntegerConverter.java",
+    "sha256": "3afc02ba8b108b936efc6f101a7fc3344453843615abec173bb5119696ac2c6d"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/converters/PlcFloatConverter.java",
+    "sha256": "4186e339f8a0fb6f33bf5d72fe99c73132aee73c6a824a892fe69a374782d815"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/converters/PlcShortConverter.java",
+    "sha256": "9a354415b01208dcdfae7d31047d091581dc951c865f16e5cc3cb93316e0c5e6"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/converters/PlcLongConverter.java",
+    "sha256": "c8bc557e6723809fd21c1c718212f7ed049651f6e05d1dae8fa5de27367127f9"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/converters/PlcDoubleConverter.java",
+    "sha256": "54bab1cd1e8cca8f3a7d3fc14b7f75068594663ebf50d353c5b4f6f7e26d7fb5"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/converters/PlcDateUtilConverter.java",
+    "sha256": "2cb868ae45f491138a5a31f822f12fa13a04920fdd73d3903d05ed8bd9d1d81b"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/aop/PlcAopProfilingHelper.java",
+    "sha256": "fcf905f2ce58c966deb5dc6d1062d211dd8a213f4f1784663ca06e864651398b"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/aop/PlcAopBaseCallback.java",
+    "sha256": "8a115ead58002cb6b58c594e1f807f5f05544adaf7552639c8255efc667cf0ad"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/aop/PlcAopManager.java",
+    "sha256": "a73ffc49eea273298b7c3b729a0c90a21fda5cf0dd5955c131913c6903b19975"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/helper/PlcEntityHelper.java",
+    "sha256": "e6227e82a844db17ef5e0a04d3bd7a15dd8904433679a8b9db668356cb822e77"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/helper/PlcEntityMetadataHelper.java",
+    "sha256": "ba88c071419b362606d3483072848b5d317740488d607d6994fd4c9291b5fe8f"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/helper/PlcIoCHelper.java",
+    "sha256": "65646d32ba9e26e47fcd753b8607fc56f77119e8b06fd9fd3130377c3ce01aaf"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/helper/PlcFileHelper.java",
+    "sha256": "3e3cde1f83ec914eb4f592945cfc726bf9ecf993cddd91871ef7ac1b3d4a70f7"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/helper/PlcDateHelper.java",
+    "sha256": "2a162add9329d24fb24d0cb7c714f41a669e1476aed38f40aa68ab566146a540"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/helper/PlcReflectionHelper.java",
+    "sha256": "8120c3c1d5d9d5e0709921c8488d9212de6f63f85b7cb2b0815bcdc175a59cc4"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/helper/PlcEjbHelper.java",
+    "sha256": "e4e4a4d65c700a20e9cdd80cb66910b55df5e93cfa5aa7a3ee62de9dc3c7df47"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/helper/PlcAnnotationHelper.java",
+    "sha256": "8cac7363fca5333726bfd0a6cfbaa817eec6590313f3090a2be834a87d3b3dd6"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/helper/PlcStringHelper.java",
+    "sha256": "bd45179203384f6f58a8a26ec47056e6b9af95c36112b7c600dba66ff5d75fdb"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/helper/PlcTestHelper.java",
+    "sha256": "a586443a6106dedf40dd60a72d2d315308bb9810a2eaeb4a5129cbcdf5b914f0"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/commons/helper/PlcBeanCloneHelper.java",
+    "sha256": "9bad78c5ca160c8112bb03289963e1371c188e0c8daa880b0ba953e74b8f9304"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/dynamicmenu/PlcDynamicMenuEntity.java",
+    "sha256": "9dc4388aba369bce6b22ee71f2629f782cd368c9f65dd9438bb34c5b02a37700"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/dynamicmenu/PlcDynamicMenu.java",
+    "sha256": "e8398079297a6a2e964175cdf187903eec3181284bd98050da3b78004acb987a"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcCnpjValidator.java",
+    "sha256": "95a158d55fc180903d652b6c45db6b1f1710e2accc8896bf72607c2f7934e8e1"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcValidateCnpj.java",
+    "sha256": "07a4ec62eb113838637773acca683101e0216c49ff748f0d2b6935aeee1f6b58"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcValidateDommainConditionals.java",
+    "sha256": "475c65ab3d6cea604260adcae455790ac3510f98c8260115112d6e66ec486103"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcCnpj.java",
+    "sha256": "86f6846e796edd7c0aa54ac85163cdee8e84d2fda97a0143b8dc74c7cb78a104"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcDommainConditionalValidator.java",
+    "sha256": "66b9e28e799c50267b05a0a1b85ed9f49a7d2f9bd66cc380ffa57c054141219d"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcValidateSimpleFormat.java",
+    "sha256": "52a93a3c618eed9006952bf4151b7b09809965ca0c350bc0ff02455e6bea29d5"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcExactSize.java",
+    "sha256": "918aaeaa8e4fb45dea25a57a7b27c5c6eac99924c100cf4a122d24089dde11de"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcMessage.java",
+    "sha256": "f4c08c9c471875c670e146f4806e411bf45cff5b57c827148ac231cd0a7a03c6"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcValidateMask.java",
+    "sha256": "21aba2d9ceb982d60f01c6effd4b988b0445d29d0679253f2375a6c85936c185"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcDommainConditional.java",
+    "sha256": "56032fb9474b9d9bcd663aa3e5af0f1532d18cea1c2263f9bd81ef0764f75e40"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcCpf.java",
+    "sha256": "39f2acfb321baacd1ed67d91f0312d8dbd02938c71802f719f51b1d7ae838b46"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcUnifiedValidation.java",
+    "sha256": "9579efcce64dc2534526e56e60d579f17c296f9c7354aa33acca7068a0ad25e7"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcDommainConditionalsValidator.java",
+    "sha256": "3e4d63547f4ef745d09c5e0cfc4a52d148fb2557a65fe9c63a8b49788f4324b9"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcSimpleFormat.java",
+    "sha256": "52c7a65fc76da2f264ef15bdf97b66e07844cacfd81ac3ea9683fbac1896620e"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcDommainConditionals.java",
+    "sha256": "cea8e59ad6ae999591444ad3028c3fb6b58d747e4d63db04f13acb4083dbadd4"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcValidateMaskValidator.java",
+    "sha256": "9aeddac957d4b42b013e4d5b94f87ed6e01878fc71dade3a2adc1f84196259b8"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcCpfValidator.java",
+    "sha256": "1446ff8c6cfbbf2ffe423c6b7ea6e543ba90a10f66f1f22e7418ee7d5d34808f"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcValidateCpf.java",
+    "sha256": "b8c5330e25b352cf250889a4c4409be53fcf5eeb2b438733ed6704fe6ff73a05"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcExactSizeValidator.java",
+    "sha256": "6cef496aadec0f69592701aab4f92975d236aaa519b0d34e75171700155cc3b4"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcValidateCnpjValidator.java",
+    "sha256": "93aa5d94c4c1a40a57c8ed17ffcc6e9d97e5b9a5bd59e88ebab05772f083b926"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcCardinalityValidator.java",
+    "sha256": "dbc8e66dba173aa2401240d8913bbe13c91e5642cccbc4170d0f43d8c32f3ad1"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcRequired.java",
+    "sha256": "309ec874eccc6b9083bc029cdef7cca7f1885ffb5bb804095bc8fbd72369ea5f"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcMask.java",
+    "sha256": "5e25da76e74dc385901966bc2b10553e2d5d0acd0a5b6d1a90742a976e61e66c"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcMaskValidator.java",
+    "sha256": "ed9fddc514f479fd65ca2a38ae23f342a6e4b58dbfc37dc6d0e3824a6a759819"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcValidateExactLength.java",
+    "sha256": "73a7c18fc716c1df992078ab1009055bfaba2a5103369a21225c233a948ac9de"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcValidateExatLengthValidator.java",
+    "sha256": "34e90c1067dba72032e658db923d8ca93693b7aae64a336ecfbe8bf30f52cfae"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcValidateCpfValidator.java",
+    "sha256": "e688d36035ea14668d09a96b7bd3cfad7eaad39a8d71b0c7cb6719a183841c49"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcCardinality.java",
+    "sha256": "f5e787e85ab18e2c311c749c95c5398018c986f6cd138558afae5c85249845e4"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcValidateDommainConditional.java",
+    "sha256": "7591a76d66d94fc7579abe21310acbf5aa30284b718cb023bfd742c98c1d1831"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcRequiredValidator.java",
+    "sha256": "c44663f05a1bec7b779234a10c1fe63cde35b51edc185dc3c455412eb5244787"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/PlcValidateDommainConditionalValidator.java",
+    "sha256": "d48670491d3bdb7f6b0d2e903c157a4f5f1f59e6ccc50089fe9fe6370582c856"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/varclass/PlcBaseMapClassProp.java",
+    "sha256": "6bd93ab3c1eb2db07f61fdba87045a2ce49e92311fc9404d0771eeeb68e611f8"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/varclass/PlcClassPropEntity.java",
+    "sha256": "0693cf61215a8d754c844eb867956d38eac2d55d267a6190afb09b65f360278c"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/type/PlcYesNo.java",
+    "sha256": "526ec59e1b0e2dd0fc6d841e20af30ab2c5337d25892690b8493655dd0b370cd"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/service/PlcInvariantValidationService.java",
+    "sha256": "9861405fe17c2ca9d50698a6e142872fa6fbfec25acb8fb7af5821d08b192f6a"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/java/org/jcompany/domain/validate/helper/PlcUnifiedValidationHelper.java",
+    "sha256": "069980e81cf74f091543cfca60f480f6509ad534552cf82aa269e97352c358a8"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/PlcConfigHelper.java",
+    "sha256": "da13510f1147c7e51ec72535e62397897a209ecb94592b55a780e522421817d7"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/commons/PlcConfigAlert.java",
+    "sha256": "c667f112cd6a9126756a9925aa8623a93cb6d0d882722653b3493e91f5d953cc"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/commons/package-info.java",
+    "sha256": "0031adbd831b2ce0e97066342c67b1c5896b25f46ab46f3f3780c7e8f320222d"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/commons/PlcConfigAudit.java",
+    "sha256": "df70f1b88e42df141fbd86dc12df0c45ba519e67298f17f00ca0ee0f2866a41a"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/commons/PlcConfigNavigator.java",
+    "sha256": "10ce533a8f530e853488d312513250a6e7ce699297939337e822f533ae1af3b1"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/commons/PlcConfigBehaviour.java",
+    "sha256": "22204d9b6fdc5975b837fd1a3cb4ff98451cc572185d14c75d15f49bafff95cc"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/commons/PlcConfigEncryption.java",
+    "sha256": "cc400a74b4c192dc53398cb938d93c32a53570f8cf0ddb050dc636394377c587"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/commons/PlcConfigExport.java",
+    "sha256": "e1d4a04f9b99bb06bf5ef182e42f795801a2a3afaeaf83fbbc4685ef99e075f9"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/commons/PlcConfigModelTechnology.java",
+    "sha256": "42072d01a768ac3489053b9d8bd6b8c90b4c75b89ef5a9bae5ecc0c2d655994e"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/commons/PlcConfigServices.java",
+    "sha256": "1503faae19487bae21d25b66754fe865013fd96c849d21b64f1122fe10addd21"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/commons/PlcConfigPackage.java",
+    "sha256": "a7aca124ec4c3996df539c3a080cedbf62b9170deed67b746765ac910dc9e9d1"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/commons/PlcConfigService.java",
+    "sha256": "2b663ed1da4533030093ec57b32c56d2d2d2fc9eae714d789375eac4dcacaefd"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/commons/PlcConfigEjbFacadeRef.java",
+    "sha256": "0ec4faa8095aac15d602e314b5a102c3c2c3ebabc3f873b3d68c9d63aff80929"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/commons/PlcConfigEnterprise.java",
+    "sha256": "cd98a8aaa6058fef2fc96ffa262dc6cd2fff4ed2a2edcbb82bdd86eb6f15e4f0"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/commons/PlcConfigArgument.java",
+    "sha256": "9d88f6480541c20b33fe2ca4b32a42f7220eb5dd8212290ce5155d0795a3c44b"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/commons/PlcConfigSelection.java",
+    "sha256": "f511839d41cc92228122fd52282c93d50dd942cc9ad5278e77a778b39bae5404"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/commons/PlcConfigJSecurity.java",
+    "sha256": "27403e825317d855b4799ba8451238e030bc7062d81b14fdefe7175d4fbb5f3f"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/commons/PlcConfigSuffixClass.java",
+    "sha256": "3d672a13fe77786ad929a1d36d71bf9fb9e36a993f076ab710188daa48caff33"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/PlcConfigGroupAggregation.java",
+    "sha256": "6085dd39e9e7ee9e783586eced3835c67ea7e8521d9b831375579fd0984a250c"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/PlcConfigInheritance.java",
+    "sha256": "c5d4e6c06d8315016497b9d429f7b2e83919e35e941da0b48bc0f6a5640b9f0c"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/PlcConfigSubDetail.java",
+    "sha256": "f16a701e6198dae928a09d528f23bbdbcfb6a10a5931b9cb1cb25b8d65460694"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/PlcConfigAttachedFile.java",
+    "sha256": "a802e9733928793ebb451b5dcbacee7eee3cc1bcb1b41b8ed1460f577ac8fe18"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/PlcConfigDetail.java",
+    "sha256": "fd439f70699f06d64df68e61cfa07b67140ad64fcdd12ebfd244a565d3436189"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/PlcConfigSecurity.java",
+    "sha256": "c16d22672a6f4f5f4d9e39c38eead9771c2d924b355dd88cbd017295b39f5c4e"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/PlcConfigComponent.java",
+    "sha256": "bb04ffda9ea3c633323a8123dfc263511a0bbd3f1d3e417ee90407b71401b038"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/PlcConfigUserPref.java",
+    "sha256": "e4f6f09a19a27c222f83f4a1ba078d730a31f2139744ebf9841b386d31926696"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/PlcConfigSubDetailConvention.java",
+    "sha256": "80e6a4a7cc6dc3b0be0451fe73bfb75e1f6f6776e73608a747a94a234cc2c253"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/PlcConfigPatternConvention.java",
+    "sha256": "5d8b9aecbc796dcf8604edd2e0c97079dfd49e867e597d2c61e5add9833a3220"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/PlcConfigDescendent.java",
+    "sha256": "bd9c1c7fc07c81befd47b346571df198eb5199bb06f27a1f0559c1b86c6f669e"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/PlcConfigAttachedFileConvention.java",
+    "sha256": "e36477ced1af6d59fcd845d6a3e48538004603aa8e6bfd01fe2c843dcb60700e"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/PlcConfigGroupAggregationConvention.java",
+    "sha256": "5dc6018ae74b2afb557a5bf13a6e77c4ae80bc0782a6af446107ba53128e5e43"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/PlcConfigApprovalFlow.java",
+    "sha256": "209c1214a1eaab12ea9d47b775aff467424ca58f3c82eae43b4b7e093784519f"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/PlcConfigSecurityConvention.java",
+    "sha256": "41e474d97bad64d698f6e4f95e747372c6ce80bc6c465df2be590a18e818c05e"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/PlcConfigDetailConvention.java",
+    "sha256": "c4802a529480cfdc58dd8d6c27978a26e652a19ee9ba967ded4e721c1e6076bf"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/PlcConfigPattern.java",
+    "sha256": "f38be5fbf0af70dd51f09599b4aacedbb1425a44524720b673f8bbdc84b1afa2"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/PlcConfigClassLookupNavigation.java",
+    "sha256": "1736947aa802c6f286c9238d3df544d4cdd32b4a4406ca4ec951397284db4f20"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/PlcConfigDescendentConvention.java",
+    "sha256": "48ec9cb4cc63f52a26cb71c9b92d31002c2d4c987045e893fb4434591967b3c4"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/PlcConfigComponentConvention.java",
+    "sha256": "4a058cf5016330ced0b9f23c895db224b2e54be7b90b83a788250f71c0ebd6ff"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/PlcConfigUserPrefConvention.java",
+    "sha256": "f60a8559a41a49af39314f29e99c9fd50ddb9519ab97d1b33be98cb8211a5d05"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/metadata/PlcMetaEditor.java",
+    "sha256": "10bb15fab76e98f1ad95fe223a304de0ad2051ffd93eabadfb2096f05ed76cce"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/metadata/PlcMetaConfig.java",
+    "sha256": "fb7fca63723dfd34ee48871dc1a8b85fe9630d2fccb45c0fee7fabbc6d4cf9e8"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/metadata/PlcMetaEditorParameter.java",
+    "sha256": "e56223abbd40d1fb97cd385d88f81abea94a0854fe8bbe369348fd6ba9851442"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/metadata/PlcRestriction.java",
+    "sha256": "555d70bd1d12659ff79d2a9a40a41a5dba7336f30f7f078fc15286572675d7b7"
+  },
+  {
+    "source": "framework/jcompany_commons/src/main/config/org/jcompany/config/domain/app/defaultplc/package-info.java",
+    "sha256": "caf4b8e2765db28e1e1d18f7849c81e165258acfa40cab4fe9551c2bad0f464b"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/facade/PlcFacadeLocator.java",
+    "sha256": "02c966b621d1576be3ec454218a77f2e8ce45be654cfadea25472ae7b09924ab"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/facade/PlcBaseFacadeImpl.java",
+    "sha256": "d23063174b61f5425d4f47df3fbbca58b8ae1a1da568032e6d10f28b2719469d"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/facade/PlcBaseSessionFacadeImpl.java",
+    "sha256": "24fc2d8ad7f52f05c04b63bc032cea991ac277a6adc34831c86c3060fd8e1d72"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/facade/PlcFacadeImpl.java",
+    "sha256": "27bfade2cadf5f12b30bfea1ce0a04ea8583ac40b88a6ff4b137b706804e12eb"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/facade/IPlcBaseSessionFacade.java",
+    "sha256": "27bf90d0caaf9244de4dfce513c706b75f89817f4a97472f9ac7de4842cc26e6"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/model/PlcBaseManager.java",
+    "sha256": "a7ed152ad8d2b432dc10007d2106a660ca94537ca54559457821db5ddc7cd6b3"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/model/PlcModelFactoryIoCService.java",
+    "sha256": "e4d2de9f8bd3868bd86e103b366cce6a45629c3bb0fd4376adb89829083f41a4"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/model/PlcBaseAS.java",
+    "sha256": "6293ca34d6f81538a8d39e5c87fc3ec2382b024efe3578f5325c4650e94bc342"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/model/IPlcManagerRemote.java",
+    "sha256": "c3fe6494f9d08bcaa9e9ba8ef32823e6a1422605851c58f73235e962173d5795"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/model/PlcAopModelCallbackService.java",
+    "sha256": "a540bf03fa9d0180a2ebbbfef057e65c56eab41c290bb2059468368f8fa1e7a2"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/model/PlcModelLocator.java",
+    "sha256": "fbd3d7d162d1b0e18b5eee8c4b3ca48fe9d3e65f9c1b79c507b786adb8ade265"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/model/PlcBaseBC.java",
+    "sha256": "f34cd57913d01f306f32b577c1f11716c038a6cd0b89383ccf6ab610af0b7b74"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/model/IPlcManager.java",
+    "sha256": "c2d59c4fbaba10ccf1f1aa517efe480f7063a19f60d9038dee96e0246034076a"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/model/PlcConstantsModel.java",
+    "sha256": "7a02d3c92248f842730189ecf182925b5f37a96999390c2f2c4b50a96ffd214d"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/IPlcDAORemote.java",
+    "sha256": "3c7af3a72f5ab8a668e082ce1a4a7fc367bfd8cff58e573ea984c4020e0391b0"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/PlcJdbcPoolLocator.java",
+    "sha256": "1c9289531fc15df0e250c4da76942bcaad3f966661df289992362dcba35f0d8f"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/PlcContextManager.java",
+    "sha256": "ad5dfb66881e676106b0932577fde3389dcd9d64b38599e4329cb9578fe78f3a"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/PlcPersistenceLocator.java",
+    "sha256": "b56e400eb77eba7fb9f9614a8e9a8192895426cc3165eca8e4f086e9d359281e"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/PlcBaseConfigListener.java",
+    "sha256": "73834c5a6c8da7b31d1e8051ac3348500901be329a142f33e28f61d679334d37"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/PlcClassValidator.java",
+    "sha256": "51be51c9cbb4c24dd80a46071da42aa7cf3b1c4551339c0a6db477bca365fa07"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/PlcConstantsPersistence.java",
+    "sha256": "6448161bb71f368e43d52742ce0871da5b0c53b7246a1dd622f1edda07b2e01b"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/PlcPersistenceFactoryIoCService.java",
+    "sha256": "9eee5d8d40864164eea6ca22505b256c394375090e42f48fa7cc591f7c9894e6"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/PlcAopPersistenciaCallbackService.java",
+    "sha256": "a95752f730d8e149a73587f756d099c5331e1657285447e24a358b4f4f2fe70b"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/IPlcDAO.java",
+    "sha256": "085e7dc331845e81f598a9d509a7a8d47189bbce3458edb4ed44c1b18b8e6081"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/PlcBaseDAO.java",
+    "sha256": "bad4aed2090141f23c18e5b2fc0bd3d8021a84c259bfaa327ed31386f887dffd"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/model/annotation/PlcTransactionRead.java",
+    "sha256": "df17c79f44496c09711356aebaa7a064d39823e7f20deb5b9f1adc660bd5390e"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/model/annotation/PlcTransactionNotApply.java",
+    "sha256": "7175dbdaca626ab9f445716689a8bfa60e1f055cd37db5f80faddbf79de97296"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/model/annotation/PlcTransactionPersist.java",
+    "sha256": "3bc7dc0eaf90fde648f8cb34f93d0ad4171c1011031148fca27e5173c74c324f"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/model/adm/PlcAdmMonitor.java",
+    "sha256": "6c54d284baa6ebed682a3da0a44a3941e35b8c515b33d7eb34c2fa633731ddf1"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/model/adm/PlcHqlInteractiveManager.java",
+    "sha256": "c37740b42182f4aa4f9cdb072acdd70ae7b4b94eeabf029ad3bd86033e69a7ea"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/model/batch/PlcBaseModelTimerTask.java",
+    "sha256": "6532a997e8d13ff8de24b7eab5389afd4b7ebf3245e431569c4fd4013d327d75"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/model/service/IPlcPhoneticService.java",
+    "sha256": "e38ce153c556fe40ac1800b18a5cdc27fcfaac58d02d679c6c8975c61c172f6f"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/model/event/PlcUpdateAfterEvent.java",
+    "sha256": "82a52cc8eaaa3473d0125f12baedb3c24173672acc9ad1fa6ed5acbf04f82695"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/jdbc/PlcWrapperDataSource.java",
+    "sha256": "16b1a89c7e2de223c92c10947914e1231d069f5824a9428e83a2e6ee1aab023a"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/listener/PlcBasePersistenceListener.java",
+    "sha256": "b22aa82de708fdaa6bc6acc4e6873fcc0a7d75d06e7d527926d4ceae114c92b5"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/service/PlcQBEService.java",
+    "sha256": "8e4b57d3fef89e5966e9fa0ae0ca708eae01a05d4520d31e40812c9e356b8600"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/jpa/PlcJpaManagerLocator.java",
+    "sha256": "2e6cc76a22e4a85d7a5ff75d4eeaa7ed8a3bb6f630bc60ba7ee986beba663447"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/jpa/PlcBaseJpaManager.java",
+    "sha256": "395254dfa33f8399379c1207936264d95f74a72c5f9c645d191828221d063cfe"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/jpa/PlcJpaManager.java",
+    "sha256": "81499c075b7f5b6d8841ccce2ddfd64a9b9d4cf8529d6075d815fe73aefc3827"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/jpa/PlcBaseJpaDAO.java",
+    "sha256": "80ac1dafa451403e8c0413aa0bee45f735da14c6aaa94fd6d39e7d01ce5be249"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/helper/PlcPersistenceHelper.java",
+    "sha256": "9b4645f60f435be494f9c6556aeb88556e4bac237f343aff1581811d1816cb32"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/hibernate/PlcConstantsHibernate.java",
+    "sha256": "b05dd118b977e4bc79739cd33133e7f9b1dd3d09635db61e395a95cbf98aa18c"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/hibernate/PlcBaseHibernateListener.java",
+    "sha256": "5509baba4aabfe3f573b4358bd3bf8ffb2026b7d2d216c2f0826c353f0dbcc5e"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/hibernate/PlcConnectionProvider.java",
+    "sha256": "65be472b748f2b6d0465ed682f668839707fba4b5b444b7fc448d95887363026"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/hibernate/PlcBaseHibernateDAO.java",
+    "sha256": "b80c962fd68043a368f1954042df83c389b6fdabd3feb3849b6eb1e102248d3a"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/hibernate/PlcBaseHibernateManager.java",
+    "sha256": "34313737b67a9bd70e4db649e5621116ae9336fd619add0c8f3bce64ee52e090"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/hibernate/PlcHibernateManagerLocator.java",
+    "sha256": "7e3e3bcadeb4e9848a329d013420e309f85bed06cfd7b682d2cd12511d4ea41d"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/hibernate/PlcHibernateManager.java",
+    "sha256": "6ebf20c044326373becd6e95d9234f04450e07ab292d6d31f5495c530ed94d99"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/hibernate/PlcBaseInterceptor.java",
+    "sha256": "c13f36e56d90ce297a78064966cdb16ed80d9e6f52974aa0761c2b3020af861f"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/hibernate/PlcStringClobType.java",
+    "sha256": "4daef7cb88ea410a58c58233156ad5895a6c62e012649fabce9b4839350c671a"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/jpa/service/PlcQBEJpaService.java",
+    "sha256": "ef899dfcc327c5784df48a20a1b6b05a3de2a01af943caf69ea4a341f70e7821"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/jpa/listeners/PlcBaseEntityListener.java",
+    "sha256": "919c202f002ce70ae400502ffbdd370525080b679ef3abe741cb4ce741693dda"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/jpa/helper/PlcJpaHelper.java",
+    "sha256": "4647d845cc9dd1a441f784d3b3375ceec1d8a8b98e759659260ce8191328a5a3"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/hibernate/util/PlcFormatterUtil.java",
+    "sha256": "896e63a31a5d694d80cb52f9859e57361bcb2017e469118bfba12982a71472e3"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/hibernate/adm/PlcSchemaUpdate.java",
+    "sha256": "b7392b72a56881b7e2d93ef3904994145922c957adadd49e14c96918ab6754eb"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/hibernate/adm/PlcSchemaExport.java",
+    "sha256": "6d8fd6571b5d4ac60cd05d1a8c046aa6378454d414742ffd3017ef584d10c011"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/hibernate/service/PlcQBEHibernateService.java",
+    "sha256": "3d32b9a0369a59fee2e410280116f302141771a4cf5391542289b7ff40031dcf"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/hibernate/service/PlcQBEService.java",
+    "sha256": "8fbb01d5535f8faf7af76f336294e111c0901f3c8e726c452386ac10604b1d88"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/hibernate/service/PlcAuditService.java",
+    "sha256": "1f6cc32930a524e8c0a3a730729a1f6ef9bc88b2084c98555bd29dd55fd4573e"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/hibernate/helper/PlcAnnotationPersistenceHelper.java",
+    "sha256": "806f6529f5a8e0ac6f3c166699091b4b1ca1d43bf1520c6e7a10ed6c8d616863"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/java/org/jcompany/persistence/hibernate/helper/PlcHibernateHelper.java",
+    "sha256": "bc57ca967e48ed9cb673c897efa5f0b1145074a5c0bf120cc2867720de58eebc"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/config/org/jcompany/config/model/package-info.java",
+    "sha256": "326414d65fe46fb3297e5e72675da7e766f35885f0dd7b896a0da3314575fe43"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/config/org/jcompany/config/model/PlcConfigModelIoC.java",
+    "sha256": "088317255e7f379fdd1c342c441b12db2afdd8ff1a203134a33dcbe23e743376"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/config/org/jcompany/config/persistence/package-info.java",
+    "sha256": "f8c395b7264617bbd982a92888dd93e86f9fd9c6e9ff8f277e2de10ee07e7b60"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/config/org/jcompany/config/persistence/PlcConfigPersistenceIoC.java",
+    "sha256": "5b702d84b75237491ac8f3890165c2a7bb20ba0163102ef3b0a07760c3aea388"
+  },
+  {
+    "source": "framework/jcompany_model/src/main/config/org/jcompany/config/persistence/PlcConfigPersistence.java",
+    "sha256": "542acc96e188d4ca1d89cb60d51e21a5e20f9a4bd49e72e48307f1e45c7ed68e"
+  }
+]

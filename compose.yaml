@@ -1,0 +1,40 @@
+services:
+  database:
+    image: postgres:16.6-alpine
+    environment:
+      POSTGRES_DB: portfolio
+      POSTGRES_USER: portfolio
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?Configure DB_PASSWORD in .env}
+    volumes:
+      - database-data:/var/lib/postgresql/data
+      - ./database/001-schema.sql:/docker-entrypoint-initdb.d/001-schema.sql:ro
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U portfolio -d portfolio"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  members:
+    build: {context: ., target: mock}
+    environment:
+      MEMBERS_USER: ${MEMBERS_USER:?Configure MEMBERS_USER}
+      MEMBERS_PASSWORD: ${MEMBERS_PASSWORD:?Configure MEMBERS_PASSWORD}
+    ports: ["127.0.0.1:8081:8080"]
+  application:
+    build: {context: ., target: app}
+    depends_on:
+      database: {condition: service_healthy}
+      members: {condition: service_started}
+    environment:
+      DB_URL: jdbc:postgresql://database:5432/portfolio?connectTimeout=5&socketTimeout=15
+      DB_USER: portfolio
+      DB_PASSWORD: ${DB_PASSWORD}
+      MEMBERS_URL: http://members:8080/members-mock
+      MEMBERS_USER: ${MEMBERS_USER}
+      MEMBERS_PASSWORD: ${MEMBERS_PASSWORD}
+      APP_USER: ${APP_USER:?Configure APP_USER}
+      APP_PASSWORD: ${APP_PASSWORD:?Configure APP_PASSWORD}
+      VIEWER_USER: ${VIEWER_USER:?Configure VIEWER_USER}
+      VIEWER_PASSWORD: ${VIEWER_PASSWORD:?Configure VIEWER_PASSWORD}
+    ports: ["127.0.0.1:8080:8080"]
+volumes:
+  database-data:
