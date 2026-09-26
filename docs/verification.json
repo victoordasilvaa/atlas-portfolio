@@ -96,6 +96,17 @@
     "javascriptErrors": [],
     "mobilePageOverflow": false
   },
-  "postgresqlExecuted": false,
-  "dockerComposeExecuted": false
+  "postgresqlExecuted": true,
+  "dockerComposeExecuted": true,
+  "ci": {
+    "date": "2026-09-26",
+    "commit": "b1ed0cff9fe20a8f73f7711c675038b0762df53b",
+    "runUrl": "https://github.com/victoordasilvaa/atlas-portfolio/actions/runs/36246659358",
+    "postgresql": "16.6",
+    "tests": 40,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "composeSmoke": "passed"
+  }
 }

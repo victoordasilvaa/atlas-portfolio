@@ -15,13 +15,15 @@ Data: 25/09/2026. Java OpenJDK 17.0.20, Maven 3.9.9.
 - Navegador Chromium: criação e edição pela interface contra o WAR empacotado, sem erros JavaScript. Layout conferido em desktop e 390 px, sem rolagem horizontal da página. A tabela mantém sua própria rolagem horizontal no celular.
 - Sintaxe dos arquivos YAML, XML e JavaScript verificada.
 
-## Ainda depende do ambiente de destino
+## Validação no GitHub Actions — 26/09/2026
 
-- **PostgreSQL real:** não foi executado nesta sessão. A suíte de persistência aceita `TEST_POSTGRES_URL`, aplica a migração SQL real em schema isolado e roda o mesmo contrato. O workflow GitHub Actions configura esse banco.
-- **Docker Compose:** configuração entregue, mas não executada aqui; este ambiente não disponibiliza Docker.
-- **GitHub:** nenhum repositório foi criado ou publicado na conta pessoal. Instruções no README.
+Execução [Verify #3](https://github.com/victoordasilvaa/atlas-portfolio/actions/runs/36246659358), commit `b1ed0cff9fe20a8f73f7711c675038b0762df53b`:
 
-Esses limites não estão escondidos atrás de testes H2. Antes do envio definitivo, confirme o workflow com PostgreSQL e a subida por Compose.
+- **PostgreSQL 16.6 real: aprovado.** `./mvnw verify` concluiu com 40 testes, zero falhas, erros ou testes ignorados. A suíte de persistência aplicou `database/001-schema.sql` em schema isolado e verificou CRUD, versão, relatório e alocação concorrente.
+- **Docker Compose: aprovado.** As imagens foram construídas a partir do código; os dois WARs e o PostgreSQL subiram juntos. `docker/smoke.py` confirmou criação, consulta e exclusão, restrição do perfil viewer, orçamento decimal, relatório e resposta da JSP. Os contêineres e volumes temporários foram removidos ao final.
+- **Publicação:** código disponível em [victoordasilvaa/atlas-portfolio](https://github.com/victoordasilvaa/atlas-portfolio), com commits separados por implementação, testes, documentação e CI.
+
+O build das imagens também executa os 40 testes com H2. Isso complementa a suíte PostgreSQL do job `test`; não a substitui. Esta validação funcional não representa teste de carga ou certificação de segurança.
 
 ## Relatórios reproduzíveis
 

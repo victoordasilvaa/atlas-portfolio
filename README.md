@@ -158,17 +158,16 @@ A pasta `dist/` do ZIP contém os dois WARs compilados e um relatório de cobert
 
 No Tomcat da aplicação, cadastre usuários e roles `editor`/`viewer` em `conf/tomcat-users.xml`. No Tomcat externo, use a role `directory`. O `docker/StartServer.java` demonstra a criação segura do XML a partir do ambiente. Use `JAVA_OPTS="--add-opens=java.base/java.lang=ALL-UNNAMED -Duser.timezone=UTC"`. Não use Tomcat 10+, pois este projeto depende de `javax`, não de `jakarta`.
 
-## Publicar na conta pessoal
+## Repositório e validação contínua
 
-Crie um repositório vazio no GitHub e, dentro da pasta extraída:
+Código-fonte: [victoordasilvaa/atlas-portfolio](https://github.com/victoordasilvaa/atlas-portfolio).
 
 ```bash
-git init
-git add .
-git commit -m "Implement portfolio management with jCompany"
-git branch -M main
-git remote add origin https://github.com/SEU_USUARIO/atlas-portfolio.git
-git push -u origin main
+git clone https://github.com/victoordasilvaa/atlas-portfolio.git
+cd atlas-portfolio
+./mvnw verify
 ```
 
-O `.gitignore` exclui senhas, builds e artefatos locais. Aguarde o workflow e confira a execução com PostgreSQL antes de enviar o link. Nenhum nome da contratante foi inserido no projeto. O [roteiro de apresentação](docs/DEMO.md) ajuda a demonstrar as decisões e seus limites com segurança.
+O workflow `Verify` executa a suíte de persistência com PostgreSQL real e um smoke test dos WARs por Docker Compose. O smoke verifica criação, consulta, exclusão, relatório, compilação da JSP e autorização de leitura/escrita. Os relatórios Surefire e JaCoCo ficam disponíveis nos artefatos da execução.
+
+O `.gitignore` exclui senhas, builds e artefatos locais. Consulte as [evidências de validação](docs/VALIDATION.md) e o [roteiro de apresentação](docs/DEMO.md).
